@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Georgia, serif;
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.holder {
+    display: flex;
+    width: fit-content;
+    background-color: black;
+    color: white
+}
