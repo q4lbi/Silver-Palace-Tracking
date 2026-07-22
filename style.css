@@ -8,7 +8,7 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -17,6 +17,8 @@ body {
   font-family: Georgia, serif;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
   background-image: url('media/home_bg.nynm9_TJ.jpg.jpeg');
 }
 
@@ -24,38 +26,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh; 
+  padding: 20px 0;
 }
 
 .container {
   background-color: rgba(45, 49, 109, 0.5);
-  height: 80%;
-  width: 80%;
+  min-height: 80vh;
+  width: 90%;
+  max-width: 800px;
   border-radius: 10%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: clamp(20px, 4vw, 30px);
+  padding: 20px;
 }
 
 .text {
-  font-size: 28px;
+  font-size: clamp(18px, 4.5vw, 28px);
   color: white;
   margin: 0;
   text-align: center;
+  padding: 0 10px;
 }
 
 .countdown {
   display: flex;
-  gap: 30px;
+  gap: clamp(10px, 3vw, 30px);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .time-box {
   position: relative;
-  width: 150px;
-  height: 190px;
+  width: clamp(70px, 20vw, 150px);
+  height: clamp(90px, 26vw, 190px);
   background: linear-gradient(180deg, #454c9e 0%, #333b76 100%);
   border: 3px solid #564ba2;
   border-radius: 10px;
@@ -70,7 +79,7 @@ body {
 
 .number {
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 42px;
+  font-size: clamp(22px, 6vw, 42px);
   color: #c6c8d0;
   text-shadow: 0 0 8px rgba(181, 184, 184, 0.4), 0 2px 2px rgba(0, 0, 0, 0.8);
   letter-spacing: 1px;
@@ -78,9 +87,21 @@ body {
 
 .label {
   font-family: Georgia, serif;
-  font-size: 16px;
-  letter-spacing: 3px;
+  font-size: clamp(10px, 2.5vw, 16px);
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #d5c5c8;
   margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    border-radius: 24px;
+  }
+
+  .time-box {
+    width: calc(50% - 15px);
+    max-width: 130px;
+    height: 100px;
+  }
 }
