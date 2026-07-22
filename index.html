@@ -3,19 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silver Palace Tracking</title>
+    <title>Silver Palace CBT2 Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Tracking</a>
-      <a href="#">About</a>
-    </nav>
-
-    <div class="holder">
-      <h1>22nd of July 2026</h1>
+    <div class="wrapper">
+      <div class="container">
+        <div class="countdown">
+          <div class="time-box">
+            <span class="number" id="days">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-box">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-box">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="time-box">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+        <p class="text">
+          Silver Palace CBT2 Countdown!<br />Starting 2026/07/23 at 10:00
+          (UTC+8)
+        </p>
+      </div>
     </div>
 
+    <script src="/script.js"></script>
   </body>
 </html>
