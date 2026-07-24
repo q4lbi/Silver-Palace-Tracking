@@ -4,41 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Silver Palace CBT2 Countdown</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
-        <div class="countdown">
-          <div class="time-box">
-            <span class="number" id="days">00</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="time-box">
-            <span class="number" id="hours">00</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="time-box">
-            <span class="number" id="minutes">00</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="time-box">
-            <span class="number" id="seconds">00</span>
-            <span class="label">Seconds</span>
+
+        <div> <!-- Dailies Section -->
+          <p class="text">CBT2 Dailies Reset</p>
+          <div class="countdown">
+            <div class="time-box">
+              <span class="number" id="d-hours">0</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+              <span class="number" id="d-minutes">0</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="time-box">
+              <span class="number" id="d-seconds">0</span>
+              <span class="label">Seconds</span>
+            </div>
           </div>
         </div>
-        <p class="text">
-          Silver Palace CBT2 Countdown!<br />Starting 2026/07/23 at 10:00
-          (UTC+8)
-        </p>
+
+        <div> <!-- CBT2 Ending Section -->
+          <div class="countdown">
+            <div class="time-box">
+              <span class="number" id="days">0</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+              <span class="number" id="hours">0</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+              <span class="number" id="minutes">0</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="time-box">
+              <span class="number" id="seconds">0</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+          <p class="text">
+            Left for Silver Palace CBT2!<br />Ending on the 13th of August, 2026
+            at 10:00 (UTC+8).
+          </p>
+        </div>
+
       </div>
     </div>
-
-    <script src="script.js"></script>
   </body>
+  <script src="dailies.js"></script> <script src="countdown.js"></script>
 </html>

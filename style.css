@@ -59,6 +59,11 @@ body {
   gap: clamp(10px, 3vw, 30px);
   flex-wrap: wrap;
   justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(24px, 6vw, 64px);
+  font-weight: bold;
+  color: rgb(2, 198, 247);
+  text-align: center;
 }
 
 .time-box {
